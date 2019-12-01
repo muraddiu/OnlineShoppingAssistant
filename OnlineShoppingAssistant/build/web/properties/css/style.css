@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+.header-login-signup{
+	background-color:#292c2f;
+	box-shadow:0 1px 1px #ccc;
+	padding: 0px 10px;
+	height: 40px;
+	color: #ffffff;
+	box-sizing: border-box;
+}
+
+.header-login-signup .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+.header-login-signup .header-limiter h1{
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-login-signup .header-limiter h1 span {
+	color: #5383d3;
+}
+
+/* The navigation links */
+
+.header-login-signup .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-login-signup .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: left;
+	margin: 0 0 0 60px;
+	padding: 0;
+}
+
+.header-login-signup .header-limiter nav a{
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 5px;
+	opacity: 0.9;
+	text-decoration:none;
+	line-height: 1;
+}
+
+.header-login-signup .header-limiter nav a:hover {
+	opacity: 1;
+}
+
+.header-login-signup .header-limiter nav a.selected {
+	color: #608bd2;
+}
+
+/* Login/Sign up buttons */
+
+.header-login-signup .header-limiter ul {
+	font: 14px Arial, Helvetica, sans-serif;
+	list-style: none;
+	line-height: 1;
+	float: right;
+}
+
+.header-login-signup .header-limiter ul li {
+	display: inline-block;
+	margin-left: 15px;
+	opacity:0.9;
+}
+
+.header-login-signup .header-limiter ul li:hover{
+	opacity: 1;
+}
+
+/* The sign up button */
+
+.header-login-signup .header-limiter ul li:last-child a {
+	font-weight: bold;
+	background-color: #3a3c3e;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-login-signup {
+		padding: 25px;
+		height: 85px;
+	}
+
+	.header-login-signup .header-limiter h1 {
+		float: none;
+		margin: -8px 0 2px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-login-signup .header-limiter nav {
+		margin: 0;
+		float: none;
+	}
+
+	.header-login-signup .header-limiter nav li a {
+		font-size: 13px;
+	}
+
+	.header-login-signup .header-limiter ul {
+		display: none;
+	}
+
+}
+
+/* For the headers to look good, be sure to reset the margin and padding of the body */
+
+body {
+	margin:0;
+	padding:0;
+}
+body {
+  background-image: url("../img/bg.jpg");
+  -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover; 
+}
+
+.window {
+  width: 40rem;
+  height: 18rem;
+  background-color: #FFF1BA;
+  border-radius: 1rem;
+  border: 0.4rem solid #495564;
+  text-align: center;
+  margin: 5rem auto;
+  overflow: hidden;
+}
+
+.bar {
+  width: inherit;
+  height: 2rem;
+  background-color: #B2F9FF;
+  border-bottom: 0.4rem solid #495564;
+}
+
+.button, .button:before, .button:after {
+  position: relative;
+  top: .4rem;
+  left: .4rem;
+  width: .5rem;
+  height: .5rem;
+  background-color: tomato;
+  border-radius: 50%;
+  border: 0.4rem solid #495564;
+}
+.button:before {
+  content: "";
+  display: block;
+  top: -.4rem;
+  left: 1rem;
+  background-color: #EDD47B;
+}
+.button:after {
+  content: "";
+  display: block;
+  top: -1.65rem;
+  left: 2.35rem;
+  background-color: #6AD8AC;
+}
+
+.search {
+  padding-top: 11%;
+}
+.search:before, .search:after {
+  content: "";
+  display: block;
+  border-radius: 61%;
+  border: 0.3rem solid #495564;
+  -webkit-animation: zoom 1s 1;
+  animation: zoom 1s 1;
+}
+.search:before {
+  position: relative;
+  top: 2.9rem;
+  left: 5rem;
+  width: 1rem;
+  height: 1rem;
+}
+.search:after {
+  position: relative;
+  top: -1.7rem;
+  left: 4.5rem;
+  width: .02em;
+  height: .02rem;
+  -webkit-animation: zoom2 .6s 1, spin .6s .6s linear 1;
+          animation: zoom2 .6s 1, spin .6s .6s linear 1;
+  -webkit-transform: translate(0.9rem, 0.6rem);
+          transform: translate(0.9rem, 0.6rem);
+}
+
+input {
+  width: 34rem;
+  height: 4rem;
+  border-radius: 3rem;
+  border: 0.3rem solid #495564;
+  padding-left: 4rem;
+  font: 1.5rem "Oswald", sans-serif;
+  outline: none;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes zoom2 {
+  0% {
+    -webkit-transform: translate(0.9rem, 0.6rem), scale(2.4);
+            transform: translate(0.9rem, 0.6rem), scale(2.4);
+  }
+  50% {
+    -webkit-transform: translate(0.9rem, 0.6rem), scale(2);
+            transform: translate(0.9rem, 0.6rem), scale(2);
+  }
+  100% {
+    -webkit-transform: translate(0.9rem, 0.6rem), scale(1);
+            transform: translate(0.9rem, 0.6rem), scale(1);
+  }
+}
+@keyframes zoom2 {
+  0% {
+    -webkit-transform: translate(0.9rem, 0.6rem), scale(2.4);
+            transform: translate(0.9rem, 0.6rem), scale(2.4);
+  }
+  50% {
+    -webkit-transform: translate(0.9rem, 0.6rem), scale(2);
+            transform: translate(0.9rem, 0.6rem), scale(2);
+  }
+  100% {
+    -webkit-transform: translate(0.9rem, 0.6rem), scale(1);
+            transform: translate(0.9rem, 0.6rem), scale(1);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg) translateX(1rem) rotate(0deg);
+            transform: rotate(0deg) translateX(1rem) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(379deg) translateX(1rem) rotate(-379deg);
+            transform: rotate(379deg) translateX(1rem) rotate(-379deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg) translateX(1rem) rotate(0deg);
+            transform: rotate(0deg) translateX(1rem) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(379deg) translateX(1rem) rotate(-379deg);
+            transform: rotate(379deg) translateX(1rem) rotate(-379deg);
+  }
+}

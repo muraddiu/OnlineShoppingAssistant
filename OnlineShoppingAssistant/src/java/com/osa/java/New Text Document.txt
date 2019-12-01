@@ -1,0 +1,4 @@
+create table myusers(id int not null auto_increment,
+email varchar(50),password varchar(50),name varchar(50),
+address varchar(100),phone varchar(50),birthday varchar(50),
+primary key(id));
